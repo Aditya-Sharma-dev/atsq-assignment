@@ -15,22 +15,19 @@ function App() {
           <InfoSection />
         </div>
         <div
+          className="grdDesign"
           style={{
             padding: "3%",
-            display: "flex",
+            // display: "flex",
             flexDirection: "row",
           }}
         >
-          <div
-            style={{
-              width: "40%",
-            }}
-          >
             <ScrollSection />
-          </div>
+          
           <div
+          className="videoWrapper"
             style={{
-              position: "fixed",
+              // position: "fixed",
               top: "15%",
               paddingTop: "4.5%",
               right: "2%",
