@@ -1,0 +1,20 @@
+.navbar{
+    height: 90px ;
+    font-family: Gtwalsheimpro,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.container-fluid{
+    margin-left: 4%;
+    margin-right: 5%;
+}
+.demo-btn{
+    background-image: linear-gradient(135deg,#0084e9,#762cec);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: 1px #000;
+    border-radius: 0.6rem;
+    background-color: #f4f4f4;
+    /* color: #0f0f0f; */
+    text-align: center;
+    
+}

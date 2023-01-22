@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import InfoSection from "./components/InfoSection";
+import ScrollSection from "./components/ScrollSection";
+import { Provider } from "react-redux";
+import store from "./store";
+import VideoPlayer from "./components/VideoPlayer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <div style={{ margin: "2px", padding: "2px" }}>
+          <InfoSection />
+        </div>
+        <div
+          style={{
+            padding: "3%",
+            display: "flex",
+            flexDirection: "row",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div
+            style={{
+              width: "40%",
+            }}
+          >
+            <ScrollSection />
+          </div>
+          <div
+            style={{
+              position: "fixed",
+              top: "15%",
+              paddingTop: "4.5%",
+              right: "2%",
+            }}
+          >
+            <VideoPlayer />
+          </div>
+        </div>
+      </div>
+    </Provider>
   );
 }
 
